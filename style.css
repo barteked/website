@@ -17,6 +17,7 @@ background-color: var(--primary);
 	margin-right: 0;
 	padding-left: 0;
     flex-direction: column;
+	text-align: center;
 }
 .navigation a {
 	color: red;
