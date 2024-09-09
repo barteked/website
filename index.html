@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Najświeższe Wiadomości z Okolicy</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Nawigacja -->
+    <nav>
+        <ul class="navigation">
+            <li><a href="#news1">Tytuł Artykułu 1</a></li>
+            <li><a href="#news2">Tytuł Artykułu 2</a></li>
+            <li><a href="#news3">Tytuł Artykułu 3</a></li>
+            <li><a href="#news4">Tytuł Artykułu 4</a></li>
+            <li><a href="#news5">Tytuł Artykułu 5</a></li>
+        </ul>
+    </nav>
+
+    <!-- Datalista do wyszukiwania artykułów -->
+    <input list="articles" placeholder="Wyszukaj artykuł...">
+    <datalist id="articles">
+        <option value="Tytuł Artykułu 1">
+        <option value="Tytuł Artykułu 2">
+        <option value="Tytuł Artykułu 3">
+        <option value="Tytuł Artykułu 4">
+        <option value="Tytuł Artykułu 5">
+    </datalist>
+
+    <!-- Główny nagłówek strony -->
+    <header>
+        <h1>Wiadomości z Twojej Okolicy</h1>
+        <blockquote>„Wiedza zaczyna się od zdziwienia.” - Arystoteles</blockquote>
+    </header>
+
+    <!-- Sekcja z artykułami -->
+    <main>
+        <article id="news1">
+            <h2>Tytuł Artykułu 1</h2>
+            <img src="zdjecie1.jpg" alt="Opis zdjęcia 1">
+            <p><strong>Krótki</strong> opis artykułu, zawierający <em>najważniejsze</em> informacje...</p>
+            <a href="oryginalny_artykul1.html">Czytaj więcej</a>
+        </article>
+
+        <article id="news2">
+            <h2>Tytuł Artykułu 2</h2>
+            <img src="zdjecie2.jpg" alt="Opis zdjęcia 2">
+            <p>Krótki opis artykułu, zawierający najważniejsze informacje...</p>
+            <a href="oryginalny_artykul2.html">Czytaj więcej</a>
+        </article>
+
+        <article id="news3">
+            <h2>Tytuł Artykułu 3</h2>
+            <img src="zdjecie3.jpg" alt="Opis zdjęcia 3">
+            <p>Krótki opis artykułu, zawierający <strong>najważniejsze</strong> informacje...</p>
+            <a href="oryginalny_artykul3.html">Czytaj więcej</a>
+        </article>
+
+        <article id="news4">
+            <h2>Tytuł Artykułu 4</h2>
+            <img src="zdjecie4.jpg" alt="Opis zdjęcia 4">
+            <p>Krótki opis artykułu, zawierający najważniejsze informacje...</p>
+            <a href="oryginalny_artykul4.html">Czytaj więcej</a>
+        </article>
+
+        <article id="news5">
+            <h2>Tytuł Artykułu 5</h2>
+            <img src="zdjecie5.jpg" alt="Opis zdjęcia 5">
+            <p>Krótki opis artykułu, zawierający najważniejsze informacje...</p>
+            <a href="oryginalny_artykul5.html">Czytaj więcej</a>
+        </article>
+    </main>
+
+    <!-- Formularz kontaktowy -->
+    <section>
+        <h2>Skontaktuj się z Redakcją</h2>
+        <form action="/miejsce_docelowe_gdzie_ma_dotrzec_formularz" method="POST" enctype="multipart/form-data">
+            <label for="imie">Imię:</label>
+            <input type="text" id="imie" name="imie" required><br><br>
+
+            <label for="nazwisko">Nazwisko:</label>
+            <input type="text" id="nazwisko" name="nazwisko" required><br><br>
+
+            <label for="wiek">Wiek:</label>
+            <input type="number" id="wiek" name="wiek" required><br><br>
+
+            <label for="telefon">Telefon:</label>
+            <input type="tel" id="telefon" name="telefon" required><br><br>
+
+            <label for="kategoria">Wybierz kategorię:</label>
+            <select id="kategoria" name="kategoria">
+                <option value="drogowe">Drogowe</option>
+                <option value="polityka">Polityka</option>
+                <option value="katastrofa">Katastrofa</option>
+                <option value="inne">Inne</option>
+            </select><br><br>
+
+            <label for="zalacznik">Załącz plik:</label>
+            <input type="file" id="zalacznik" name="zalacznik"><br><br>
+
+            <button type="submit">Wyślij</button>
+        </form>
+    </section>
+
+    <!-- Tabelka z reklamami -->
+    <section>
+        <h2>Reklama</h2>
+        <table>
+            <tr>
+                <th>Reklama na</th>
+                <th>Tygodniowa</th>
+                <th>Miesięczna</th>
+            </tr>
+            <tr>
+                <td>Stronie</td>
+                <td>100</td>
+                <td>350</td>
+            </tr>
+            <tr>
+                <td>Facebook</td>
+                <td>50</td>
+                <td>200</td>
+            </tr>
+            <tr>
+                <td>Instagram</td>
+                <td>100</td>
+                <td>300</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Stopka -->
+    <footer>
+        <noscript>Strona bez odpalonych skryptów nie będzie zawierała esencji życia</noscript>
+        <address>
+            Redakcja Wiadomości Lokalnych<br>
+            ul. Przykładowa 123, 00-000 Miasto<br>
+            Tel: <phone>123-456-789</phone><br>
+            Email: <email>kontakt@wiadomoscilokalne.pl</emial
+        </address>
+        <ul>
+            <li>Jan Kowalski - Redaktor Naczelny</li>
+            <li>Anna Nowak - Dziennikarz</li>
+            <li>Marek Wiśniewski - Fotoreporter</li>
+        </ul>
+    </footer>
+   
+
+    <section>
+        <div style="width: 10px; height: 10px; background-color: red; z-index: 1; position: relative;">B</div>
+        <div style="width: 10px; height: 10px; position: relative; top:5px; z-index: 2;">A</div>
+    </section>
+</body>
+</html>

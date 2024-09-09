@@ -1,0 +1,42 @@
+:root{
+	--primary: rgb(201, 236, 201);
+}
+
+* {
+	box-sizing: border-box;
+background-color: var(--primary);
+}
+
+.navigation {
+	display: flex;
+	gap: 1rem;
+	list-style: none;
+	width: 100vw;
+	justify-content: center;
+	margin-left: 0;
+	margin-right: 0;
+	padding-left: 0;
+    flex-direction: column;
+}
+.navigation a {
+	color: red;
+	border-style: solid;
+	border-width: 1px;
+	padding: 0.3rem;
+    text-decoration: none;
+background-color: pink;
+}
+.navigation a:hover {
+	color: blue;
+	border-style: solid;
+	border-width: 1px;
+	padding: 0.3rem;
+    text-decoration: none;
+    background-color: lime;
+}
+a {
+background-color: aqua;
+
+
+
+}
